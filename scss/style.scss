@@ -1,10 +1,110 @@
 // Styly
 
-// font-family: 'Rubik', sans-serif;
+// font-family
+$Rubik:'Rubik', sans-serif;
 
 // Colors 
 $text-color: black;
-$background-color: lightblue;
+$background-color: #f4f4f4;
 $primary-color: darkblue;
 $secondary-color: pink;
 
+//Padding
+$padding-normal: 20px;
+
+//font size
+$normal-size: 16px;
+
+/* media queries breakpoints
+    @media only screen and (min-width: 480px) {}
+    @media only screen and (min-width: 1024px) {} */
+
+body {
+    margin: 0;
+    font-family: $Rubik;
+    font-size: $normal-size;
+    background-color: $background-color;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: $padding-normal;
+    
+}
+.header__logo {
+    margin: 0;
+    width: 150px;
+  }
+
+.menu {
+    display: flex;
+
+    .menu__item {
+        list-style-type: none;
+    }
+
+    .menu__link{
+        text-decoration: none;
+        color: $background-color;
+        padding: $padding-normal;
+        background-color: $primary-color;  
+        // border: 1px solid $background-color;
+    }
+}
+
+.section {
+    padding: $padding-normal;
+}
+
+.hero {
+    background-color: $secondary-color;
+    min-height: 200px;
+}
+
+
+.panel {
+    text-align: center;
+    padding: $padding-normal;
+}
+
+.boxy {
+    text-align: center;
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.box {
+    padding: $padding-normal;
+    @media only screen and (min-width: 1024px) {
+        flex-basis: 30%;
+    }
+}
+.button--blue {
+    background-color: $primary-color;
+    padding: $padding-normal;
+    text-align: center;
+    color: $background-color;
+    border: none;
+    font-size: $normal-size;
+    font-family: $Rubik;
+    border-radius: 10px;
+    width: 150px;
+    margin: auto;
+    display: inline-block;
+}
+  
+.footer{
+    background-color: $primary-color;
+    color: $background-color;
+    padding: $padding-normal;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+  }
