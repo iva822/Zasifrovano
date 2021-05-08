@@ -8,6 +8,7 @@ body {
   background-color: #f4f4f4;
   max-width: 1500px;
   margin: auto;
+  line-height: 1.5;
 }
 
 .header {
@@ -15,7 +16,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: darkblue;
-  padding: 20px;
 }
 
 .header__logo {
@@ -23,17 +23,23 @@ body {
   width: 150px;
 }
 
+.logo__img {
+  width: 50px;
+  padding: 20px;
+}
+
 .menu {
   display: flex;
 }
 .menu .menu__item {
   list-style-type: none;
+  padding: 20px;
 }
 .menu .menu__link {
   text-decoration: none;
   color: #f4f4f4;
-  padding: 20px;
   background-color: darkblue;
+  align-items: center;
 }
 
 .section {
@@ -42,12 +48,19 @@ body {
 
 .hero {
   background-color: pink;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .panel {
   text-align: center;
   padding: 20px;
+}
+.panel .text--center {
+  font-size: 18px;
+}
+
+.headding2--blue {
+  color: darkblue;
 }
 
 .boxy {
@@ -59,28 +72,80 @@ body {
     justify-content: space-between;
   }
 }
-
-.box {
+.boxy .box {
   padding: 20px;
 }
 @media only screen and (min-width: 1024px) {
-  .box {
+  .boxy .box {
     flex-basis: 30%;
   }
+}
+.boxy .box__icon {
+  padding: 20px;
 }
 
 .button--blue {
   background-color: darkblue;
   padding: 20px;
   text-align: center;
-  color: #f4f4f4;
   border: none;
-  font-size: 16px;
-  font-family: "Rubik", sans-serif;
   border-radius: 10px;
   width: 150px;
   margin: auto;
-  display: inline-block;
+}
+
+.button__link {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  .columns {
+    grid-template-columns: 2fr;
+  }
+}
+.columns .columns__text {
+  margin: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .columns .columns__text {
+    grid-column: 2/3;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .columns .columns h2 {
+    grid-column: 2/3;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .columns .columns h3 {
+    grid-column: 2/3;
+  }
+}
+
+.headding3--blue {
+  color: darkblue;
+}
+@media only screen and (min-width: 1024px) {
+  .headding3--blue {
+    grid-column: 2/3;
+  }
+}
+
+.foto {
+  width: 100%;
+  grid-column: 1/2;
+}
+
+.form {
+  text-align: center;
 }
 
 .footer {
@@ -89,5 +154,5 @@ body {
   padding: 20px;
   text-align: center;
   align-items: center;
-  line-height: 1.5;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */

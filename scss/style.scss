@@ -26,6 +26,7 @@ body {
     background-color: $background-color;
     max-width: 1500px;
     margin: auto;
+    line-height: 1.5;
 }
 
 .header {
@@ -33,7 +34,6 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: $primary-color;
-    padding: $padding-normal;
     
 }
 .header__logo {
@@ -41,19 +41,26 @@ body {
     width: 150px;
   }
 
+.logo__img {
+    width: 50px;
+    padding: 20px;
+}
+
 .menu {
     display: flex;
 
     .menu__item {
         list-style-type: none;
+        padding: $padding-normal;
     }
 
     .menu__link{
         text-decoration: none;
         color: $background-color;
-        padding: $padding-normal;
+    
         background-color: $primary-color;  
         // border: 1px solid $background-color;
+        align-items: center;
     }
 }
 
@@ -63,14 +70,23 @@ body {
 
 .hero {
     background-color: $secondary-color;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 
 .panel {
     text-align: center;
     padding: $padding-normal;
+
+    .text--center {
+       font-size: 18px; 
+    }
 }
+
+.headding2--blue {
+    color: $primary-color;
+}
+
 
 .boxy {
     text-align: center;
@@ -78,33 +94,89 @@ body {
         display: flex;
         justify-content: space-between;
     }
-}
-
-.box {
-    padding: $padding-normal;
-    @media only screen and (min-width: 1024px) {
-        flex-basis: 30%;
+    .box {
+        padding: $padding-normal;
+        @media only screen and (min-width: 1024px) {
+            flex-basis: 30%;
+        }
+        &__icon {
+            padding: $padding-normal;
+        }
     }
 }
+
+
+
 .button--blue {
     background-color: $primary-color;
     padding: $padding-normal;
     text-align: center;
-    color: $background-color;
     border: none;
-    font-size: $normal-size;
-    font-family: $Rubik;
     border-radius: 10px;
     width: 150px;
     margin: auto;
-    display: inline-block;
 }
-  
+
+.button__link {
+    text-decoration: none;
+    color: $background-color;
+    font-size: $normal-size;
+    font-family: $Rubik;
+}
+ // o hre 
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: 2fr;
+    }
+
+    .columns__text{
+        margin: 0;
+        @media only screen and (min-width: 1024px){
+            grid-column: 2 / 3 
+        }
+    } 
+    .columns h2 {
+        @media only screen and (min-width: 1024px){
+            grid-column: 2 / 3 
+        }
+    }
+    .columns h3 {
+        @media only screen and (min-width: 1024px){
+            grid-column: 2 / 3 
+        }
+    }
+}
+
+.headding3--blue {
+    color: $primary-color;
+    @media only screen and (min-width: 1024px){
+        grid-column: 2 / 3 
+    }
+}
+
+.foto {
+    width: 100%;
+    grid-column: 1 / 2;
+}
+
+
+//registrace
+.form {
+    text-align: center;
+}
+
+
+//paticka
+
 .footer{
     background-color: $primary-color;
     color: $background-color;
     padding: $padding-normal;
     text-align: center;
     align-items: center;
-    line-height: 1.5;
+    margin-top: 50px;
   }

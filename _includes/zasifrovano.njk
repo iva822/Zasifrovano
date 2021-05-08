@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zašifrováno</title>
+
+	<!-- Google Fonts: Rubik 400, 400i, 600 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+	
+	<!-- Moje CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<logo class="header__logo">
+			<img class="logo__img" src="/images/alza_3.png" alt="logo Zašifrováno">
+		</logo>
+		<!-- <input class="menu__btn" type="checkbox" id="menu-btn" />
+		<label class="menu__icon" for="menu-btn"><span class="navicon"></span></label> -->
+		<menu class="menu">
+			<li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
+			<li class="menu__item"><a class="menu__link" href="/o_hre/">O hře</a></li>
+			<li class="menu__item"><a class="menu__link" href="/motivacni_ulohy/">Motivační úlohy</a></li>
+			<li class="menu__item"><a class="menu__link" href="/registrace/">Registrace</a></li>
+			<li class="menu__item"><a class="menu__link" href="/prehled_tymu/">Přehled týmů</a></li>
+			<li class="menu__item"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+		</menu>
+	</header>
+	
+	<main>
+	
+		{{ content | safe }}
+
+	</main>
+
+	<footer class="footer">
+		Zašifrováno 2021
+		<br>© L&I&H
+	</footer>
+
+</body>
+</html>
+	
