@@ -11,9 +11,11 @@ $secondary-color: pink;
 
 //Padding
 $padding-normal: 20px;
+$padding-narrow: 10px;
 
 //font size
 $normal-size: 16px;
+$bigger-size: 18px;
 
 /* media queries breakpoints
     @media only screen and (min-width: 480px) {}
@@ -27,6 +29,7 @@ body {
     max-width: 1500px;
     margin: auto;
     line-height: 1.5;
+    box-sizing: border-box;
 }
 
 .header {
@@ -35,11 +38,12 @@ body {
     justify-content: space-between;
     background-color: $primary-color;
     
+    &__logo {
+        margin: 0;
+        width: 150px;
+    }
 }
-.header__logo {
-    margin: 0;
-    width: 150px;
-  }
+
 
 .logo__img {
     width: 50px;
@@ -49,15 +53,15 @@ body {
 .menu {
     display: flex;
 
-    .menu__item {
+    &__item {
         list-style-type: none;
         padding: $padding-normal;
     }
 
-    .menu__link{
+    &__link{
         text-decoration: none;
         color: $background-color;
-    
+        font-size: $bigger-size;
         background-color: $primary-color;  
         // border: 1px solid $background-color;
         align-items: center;
@@ -79,7 +83,7 @@ body {
     padding: $padding-normal;
 
     .text--center {
-       font-size: 18px; 
+       font-size: $bigger-size; 
     }
 }
 
@@ -122,6 +126,7 @@ body {
     color: $background-color;
     font-size: $normal-size;
     font-family: $Rubik;
+    font-weight: 600;
 }
  // o hre 
 
@@ -167,6 +172,39 @@ body {
 //registrace
 .form {
     text-align: center;
+
+    &__input {
+        font-family: $Rubik;
+        font-size: $normal-size;
+        font-weight: 400;
+        padding: $padding-narrow;
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    &__block {
+        font-size: $bigger-size;
+        font-weight: 600;
+        padding: $padding-normal;
+        border-radius: 10px;
+        border-width: 3px;
+        border-color: $primary-color;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 40px;
+        color: $primary-color;
+    }
+    &__label {
+        font-size: $normal-size;
+        font-weight: 400;
+        color: $text-color;
+    }
+    &_required {
+        font-weight: 600;
+        color: red;
+    }
 }
 
 

@@ -2,19 +2,47 @@
 layout: zasifrovano.njk
 ---
 <section class="section form">
-    <h2 class="headding2--blue">Registrace</h2>
-    <p class="text--center">Registrace teamů již probíhá a končí xx.xx.2021 ve 23:59. Neváhejte a přihlaste se co nejdříve. Hry se mohou zúčastnit 2 až 5 členné týmy. Naše doporučení: Víc hlav víc ví.</p> 
-    
-    <form>
-        Název teamu
-        Jméno kapitána
-        Kontaktní email
-        @
-        Kontaktní telefon
-        Ostatní členové
-        REGISTROVAT
+    <div class="panel">
+        <h2 class="headding2--blue">Registrace</h2>
+        <p class="text--center">Registrace teamů již probíhá a končí xx.xx.2021 ve 23:59. Neváhejte a přihlaste se co nejdříve. Hry se mohou zúčastnit 2 až 5 členné týmy. Naše doporučení: Víc hlav víc ví.</p> 
+    </div>
+
+    <form method="get" action="...">
+        <fieldset class="form__block">
+            <legend>Team</legend>
+                <label class="form__label" for="nazev_tymu">Název teamu<span class="form_required" > *</span></label>
+                <input class="form__input" type="text" name="nazev_teamu" id="nazev_teamu" maxlength="50" placeholder="Název teamu" required>
+        </fieldset>
+        
+        <fieldset class="form__block">
+            <legend>Kapitán</legend>
+                <label class="form__label" for="jmeno">Jméno kapitána<span class="form_required" > *</span></label>   
+                <input class="form__input" type="text" name="jmeno" id="jmeno" maxlength="50" placeholder="Jan Novák" required>
+                <label class="form__label" for="email">Kontaktní email<span class="form_required" > *</span></label>   
+                <input class="form__input" type="email" name="email" id="email" maxlength="50" placeholder="jan@novak.cz" required>
+                <label class="form__label" for="nazev_tymu">Kontaktní telefon<span class="form_required" > *</span></label>    
+                <input class="form__input" type="tel" name="telefon" id="telefon" maxlength="50" placeholder="+420 777 123 456" required>  
+        </fieldset>
+        
+        <fieldset class="form__block">
+                <legend>Ostatní členové teamu</legend>
+                    <label class="form__label" for="jmeno">Druhý člen<span class="form_required" > *</span></label>
+                    <input class="form__input" type="text" name="jmeno2" id="jmeno2" maxlength="50" placeholder="Jan Novák2">
+                    <label class="form__label" for="jmeno">Další člen</label>
+                    <input class="form__input" type="text" name="jmeno3" id="jmeno3" maxlength="50" placeholder="Jan Novák3">
+                    <label class="form__label" for="jmeno">Další člen</label>    
+                    <input class="form__input" type="text" name="jmeno4" id="jmeno4" maxlength="50" placeholder="Jan Novák4">
+                    <label class="form__label" for="jmeno">Další člen</label>    
+                    <input class="form__input" type="text" name="jmeno5" id="jmeno5" maxlength="50" placeholder="Jan Novák5">
+                        
+        </fieldset>
+        
+        <button class="button--blue" type="submit" name="registrovat" id="registrovat"> 
+            <a class="button__link" href="/registrace2/">REGISTROVAT</a>
+        </button>
     </form>
     
-    
-    <p class="text--center">Zajímá vás, kdo také soutěží a jak si stojíte mezi ostatními? Podívejte se na přehled přihlášených teamů.</p> 
+    <div class="panel">
+        <p class="text--center">Zajímá vás, kdo také soutěží a jak si stojíte mezi ostatními? Podívejte se na přehled přihlášených teamů.</p> 
+    </div>
 </section>
