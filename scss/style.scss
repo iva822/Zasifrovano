@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: $primary-color;
+    border-radius: 10px;
     
     &__logo {
         margin: 0;
@@ -135,7 +136,7 @@ body {
     grid-template-columns: 1fr;
     gap: 20px;
     @media only screen and (min-width: 1024px) {
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .columns__text{
@@ -166,6 +167,20 @@ body {
 .foto {
     width: 100%;
     grid-column: 1 / 2;
+    border-radius: 10px;
+    
+    &--horni {
+        @media only screen and (min-width: 1024px){
+            grid-row: span 3;
+        }
+    }
+    
+
+    &--spodni {
+        @media only screen and (min-width: 1024px){
+            grid-row: 4 / 9;
+        } 
+    }
 }
 
 
@@ -182,6 +197,7 @@ body {
         width: 90%;
         margin-bottom: 20px;
         border-radius: 10px;
+        
     }
 
     &__block {
@@ -207,6 +223,40 @@ body {
     }
 }
 
+//kontakt
+
+
+.form__input--kontakt {
+        font-family: $Rubik;
+        font-size: $normal-size;
+        font-weight: 400;
+        padding: $padding-narrow;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 500px;
+        
+    }
+.form__label--kontakt {
+        font-size: $normal-size;
+        font-weight: 400;
+        color: $text-color;
+    }
+.form__textarea {
+        font-family: $Rubik;
+        font-size: $normal-size;
+        font-weight: 400;
+        padding: $padding-narrow;
+        display: block;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 500px;
+    }
+
 
 //paticka
 
@@ -217,4 +267,5 @@ body {
     text-align: center;
     align-items: center;
     margin-top: 50px;
+    border-radius: 10px;
   }

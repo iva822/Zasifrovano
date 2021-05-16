@@ -17,6 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: darkblue;
+  border-radius: 10px;
 }
 .header__logo {
   margin: 0;
@@ -110,7 +111,7 @@ body {
 }
 @media only screen and (min-width: 1024px) {
   .columns {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .columns .columns__text {
@@ -144,6 +145,17 @@ body {
 .foto {
   width: 100%;
   grid-column: 1/2;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .foto--horni {
+    grid-row: span 3;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .foto--spodni {
+    grid-row: 4/9;
+  }
 }
 
 .form {
@@ -181,6 +193,38 @@ body {
   color: red;
 }
 
+.form__input--kontakt {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.form__label--kontakt {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.form__textarea {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 500px;
+}
+
 .footer {
   background-color: darkblue;
   color: #f4f4f4;
@@ -188,4 +232,5 @@ body {
   text-align: center;
   align-items: center;
   margin-top: 50px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
