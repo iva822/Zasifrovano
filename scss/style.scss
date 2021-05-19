@@ -4,10 +4,11 @@
 $font-main:'Open Sans', sans-serif;;
 
 // Colors 
-$text-color: black;
+$text-color:#494949;
 $background-color: #f4f4f4;
-$primary-color: darkblue;
-$secondary-color: pink;
+$primary-color: #111d4a;
+$secondary-color: #6883ba;
+$alza-color:#5ab430;
 
 //Padding
 $padding-normal: 20px;
@@ -30,6 +31,7 @@ body {
     margin: auto;
     line-height: 1.5;
     box-sizing: border-box;
+    color: $text-color;
 }
 
 .header {
@@ -91,19 +93,30 @@ body {
     }
 }
 
-.headding2--blue {
-    color: $primary-color;
-    font-size: 36px;
-}
-
-.headding2--white {
-    color: $background-color;
-    font-size: 36px;
-}
-
-.headding1--white {
-    color: $background-color;
+h1 {
     font-size: 48px;
+    color: $background-color;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    color: $secondary-color;
+}
+
+.darkblue {
+    color: $primary-color;
+}
+
+.white {
+    color: $background-color;
+}
+
+.blue {
+    color:$secondary-color;
 }
 
 .boxy {
@@ -126,13 +139,14 @@ body {
 
 
 .button--blue {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     padding: $padding-normal;
     text-align: center;
     border: none;
     border-radius: 10px;
     width: 150px;
     margin: auto;
+   
 }
 
 .button__link {
@@ -151,8 +165,9 @@ body {
     @media only screen and (min-width: 1024px) {
         grid-template-columns: 1fr 1fr;
     }
+}
 
- .column {
+.column {
     @media only screen and (min-width: 1024px){
         grid-column: 2 / 3;
         grid-row: span 2;
@@ -175,11 +190,8 @@ body {
             grid-column: 2 / 3;
         }
     } */
-}
 
-.headding3--blue {
-    color: $primary-color;
-}
+
 
 .foto {
     width: 100%;
@@ -204,7 +216,7 @@ body {
 //registrace
 .form {
     text-align: center;
-
+    
     &__input {
         font-family: $font-main;
         font-size: $normal-size;
@@ -214,6 +226,7 @@ body {
         width: 90%;
         margin-bottom: 20px;
         border-radius: 10px;
+        border: 2px solid $primary-color;
         
     }
 
@@ -231,7 +244,7 @@ body {
     }
     &__label {
         font-size: $normal-size;
-        font-weight: 400;
+        font-weight: 600;
         color: $text-color;
     }
     &_required {
@@ -254,11 +267,12 @@ body {
         border-radius: 10px;
         width: 80%;
         max-width: 500px;
+        border: 2px solid $primary-color;
         
     }
 .form__label--kontakt {
         font-size: $normal-size;
-        font-weight: 400;
+        font-weight: 600;
         color: $text-color;
     }
 .form__textarea {
@@ -272,6 +286,7 @@ body {
         margin-bottom: 20px;
         width: 80%;
         max-width: 500px;
+        border: 2px solid $primary-color;
     }
 
 
