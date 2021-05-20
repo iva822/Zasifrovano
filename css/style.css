@@ -121,12 +121,13 @@ h3 {
   border-radius: 10px;
   width: 150px;
   margin: auto;
+  margin-top: 30px;
 }
 
 .button__link {
   text-decoration: none;
   color: #f4f4f4;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -182,6 +183,14 @@ h3 {
           grid-row: 4 / 9;
       } 
   } */
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.box__image {
+  width: 100%;
 }
 
 .form {
@@ -252,6 +261,21 @@ h3 {
   width: 80%;
   max-width: 500px;
   border: 2px solid #111d4a;
+}
+
+.button--simple {
+  margin-top: 30px;
+}
+
+.button__link--simple {
+  text-decoration: none;
+  color: #6883ba;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px;
+  border-bottom: 2px solid #6883ba;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .footer {
