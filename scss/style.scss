@@ -42,32 +42,39 @@ body {
     justify-content: space-between;
     background-color: $primary-color;
     border-radius: 10px 10px 0 0;
-    display: flex;
+    // display: flex;
     align-items: center;
     
-    &__logo {
+    /* &__logo {
         margin: 0;
         width: 150px;
-    }
+    } */
 }
 
 
 .logo__img {
-    width: 235px;
     padding: $padding-normal;
-    margin-top: 6px;
+    margin-top: 6px; 
+    width: 200px;
+    @media only screen and (min-width: 1024px) {
+        width: 235px;
+    }
+   
 }
 
+
 .menu {
-    align-items: center;
+    vertical-align: middle;
 
     &__icon {
         color: $background-color;
-        padding:$padding-normal;
+        padding: 32px 20px 20px 10px;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 20px;
+        float: right;
         @media only screen and (min-width: 1024px){
             display: none;
+            font-size: 24px;
         }
     }
 
@@ -78,8 +85,8 @@ body {
     &__checkbox:checked ~ .menu__list {
         display: block;
     }
-    &__checkbox:checked ~.header {
-        display: block;
+    &__checkbox:checked ~ .logo__img {
+        display: none;
     }
 
     &__list {
@@ -88,7 +95,8 @@ body {
         display: none;
 
         @media only screen and (min-width: 1024px){
-            display: flex;
+            display: inline-block;
+            float: right;
         }
     }
 
@@ -96,8 +104,10 @@ body {
         padding: $padding-normal;
         list-style: none;
         border-bottom: 1px solid $background-color;
+        
         @media only screen and (min-width: 1024px){
             border-bottom: none;
+            display: inline-block;
         }
 
     }
@@ -137,17 +147,26 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: $background-color;
+    @media only screen and (min-width: 1024px){
+        font-size: 48px;
+    }
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 28px;
+    @media only screen and (min-width: 1024px){
+        font-size: 36px;
+    }
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 20px;
     color: $secondary-color;
+    @media only screen and (min-width: 1024px){
+        font-size: 24px;
+    }
 }
 
 .darkblue {
