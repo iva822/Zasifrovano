@@ -24,7 +24,6 @@ $bigger-size: 18px;
 
 body {
     margin: 0;
-    padding: $padding-narrow;
     font-family:$font-main;
     font-size: $normal-size;
     background-color: $background-color;
@@ -64,8 +63,10 @@ body {
 
 
 .menu {
-    vertical-align: middle;
-
+    // vertical-align: middle;
+    @media only screen and (min-width: 1024px){
+        padding-right: 20px;
+    }
     &__icon {
         color: $background-color;
         padding: 32px 20px 20px 10px;
@@ -211,7 +212,7 @@ h3 {
     width: 150px;
     margin: auto;
     margin-top: 30px;
-   
+    
 }
 
 .button__link {
