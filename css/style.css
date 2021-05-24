@@ -18,12 +18,16 @@ body {
   padding: 0;
   justify-content: space-between;
   background-color: #111d4a;
-  border-radius: 10px 10px 0 0;
   align-items: center;
   /* &__logo {
       margin: 0;
       width: 150px;
   } */
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 .logo__img {
@@ -258,8 +262,16 @@ h3 {
   font-style: italic;
 }
 
+/* .img__cover {
+    height: 0;
+    padding-bottom: 100%;
+}  */
 .box__image {
   width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 2px solid #111d4a;
+  border-radius: 10px;
 }
 
 .form {
@@ -275,6 +287,10 @@ h3 {
   margin-bottom: 20px;
   border-radius: 10px;
   border: 2px solid #111d4a;
+  outline: 0;
+}
+.form__input:focus {
+  border: 3px solid #6883ba;
 }
 .form__block {
   font-size: 18px;
@@ -310,6 +326,11 @@ h3 {
   width: 80%;
   max-width: 500px;
   border: 2px solid #111d4a;
+  outline: none;
+}
+
+.form__input--kontakt:focus {
+  border: 3px solid #6883ba;
 }
 
 .form__label--kontakt {
@@ -330,6 +351,11 @@ h3 {
   width: 80%;
   max-width: 500px;
   border: 2px solid #111d4a;
+  outline: none;
+}
+
+.form__textarea:focus {
+  border: 3px solid #6883ba;
 }
 
 .button--simple {
@@ -355,5 +381,9 @@ h3 {
   text-align: center;
   align-items: center;
   margin-top: 50px;
-  border-radius: 0 0 10px 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    border-radius: 0 0 10px 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
