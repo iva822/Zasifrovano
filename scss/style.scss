@@ -13,6 +13,7 @@ $alza-color:#5ab430;
 //Padding
 $padding-normal: 20px;
 $padding-narrow: 10px;
+$padding-table: 5px;
 
 //font size
 $normal-size: 16px;
@@ -359,13 +360,17 @@ h3 {
     text-align: center;
 
     &__heading {
-        padding: $padding-narrow;
-        font-size: $bigger-size;
-        color: $primary-color;
+        padding: $padding-table;
+        color: $secondary-color;
+        border-bottom: 2px solid $secondary-color;
+        font-size: 20px;
+            @media only screen and (min-width: 1024px){
+                font-size: 24px;
+        }
     }
 
     &__text {
-        padding: $padding-narrow;
+        padding: $padding-table;
     }
 }
 
