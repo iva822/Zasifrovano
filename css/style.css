@@ -315,7 +315,6 @@ h3 {
 }
 
 .iframe {
-  border: 2px solid black;
   width: 100%;
   max-width: 700px;
   margin: auto;
@@ -327,17 +326,11 @@ h3 {
 .table {
   margin: auto;
   text-align: center;
+  border-collapse: collapse;
 }
 .table__heading {
   padding: 5px;
-  color: #6883ba;
-  border-bottom: 2px solid #6883ba;
-  font-size: 20px;
-}
-@media only screen and (min-width: 1024px) {
-  .table__heading {
-    font-size: 24px;
-  }
+  font-size: 18px;
 }
 .table__text {
   padding: 5px;

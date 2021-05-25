@@ -346,7 +346,7 @@ h3 {
 //prehled
 
 .iframe {
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 100%;
     max-width: 700px;
     margin: auto;
@@ -358,15 +358,11 @@ h3 {
 .table {
     margin: auto;
     text-align: center;
+    border-collapse: collapse;
 
     &__heading {
         padding: $padding-table;
-        color: $secondary-color;
-        border-bottom: 2px solid $secondary-color;
-        font-size: 20px;
-            @media only screen and (min-width: 1024px){
-                font-size: 24px;
-        }
+        font-size: $bigger-size;
     }
 
     &__text {
