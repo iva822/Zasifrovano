@@ -359,15 +359,11 @@ h3 {
     margin: auto;
     text-align: center;
     border-collapse: collapse;
-    border: 2px solid $primary-color;
-    border-radius: 10px;
-
-
    
     &__heading {
         padding: $padding-table;
         font-size: $bigger-size;
-        border-bottom: 2px solid $text-color;
+   
     }
 
     &__text {
