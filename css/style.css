@@ -315,6 +315,7 @@ h3 {
 }
 
 .iframe {
+  border: none;
   width: 100%;
   max-width: 700px;
   margin: auto;
@@ -327,6 +328,7 @@ h3 {
   margin: auto;
   text-align: center;
   border-collapse: collapse;
+  color: #111d4a;
 }
 .table__heading {
   padding: 5px;
