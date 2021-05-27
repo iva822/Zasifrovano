@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* s padding normal to kolem 1040px dělalo problémy */
 /* media queries breakpoints
     @media only screen and (min-width: 480px) {}
     @media only screen and (min-width: 1024px) {} */
@@ -81,7 +83,7 @@ body {
   }
 }
 .menu__item {
-  padding: 20px;
+  padding: 20px 16px;
   list-style: none;
   border-bottom: 1px solid #f4f4f4;
 }
@@ -113,7 +115,26 @@ body {
   background-color: #6883ba;
   min-height: 250px;
 }
-
+@media only screen and (min-width: 1024px) {
+  .hero {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero__img {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .hero__img {
+    display: block;
+    width: 200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .panel {
   text-align: center;
   padding: 20px;
@@ -263,17 +284,31 @@ h3 {
 }
 
 /* .img__cover {
-    height: 0;
-    padding-bottom: 100%;
-}  */
+   width: 100%;
+   max-width: 500px;
+   position: relative; */
+/*  .img__cover:after{
+     content: "";
+     display: block;
+     padding-bottom: 100%;
+ }  */
 .box__image {
   width: 100%;
   max-width: 500px;
   height: auto;
   border: 2px solid #111d4a;
   border-radius: 10px;
+  background-color: white;
 }
 
+/* .box__image--placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    background-color: white;
+}  */
 .form {
   text-align: center;
 }

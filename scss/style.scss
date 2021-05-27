@@ -14,6 +14,8 @@ $alza-color:#5ab430;
 $padding-normal: 20px;
 $padding-narrow: 10px;
 $padding-table: 5px 10px 5px 10px;
+$padding-menu: 20px 16px; /* s padding normal to kolem 1040px dělalo problémy */
+
 
 //font size
 $normal-size: 16px;
@@ -104,7 +106,7 @@ body {
     }
 
     &__item {
-        padding: $padding-normal;
+        padding: $padding-menu;
         list-style: none;
         border-bottom: 1px solid $background-color;
         
@@ -137,7 +139,30 @@ body {
 .hero {
     background-color: $secondary-color;
     min-height: 250px;
+    
+    @media only screen and (min-width: 1024px){
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        justify-content: space-between;
+    }   
+
+    &__img {
+        display: none;
+        @media only screen and (min-width: 1024px){
+            display: block;
+            width: 200px;
+            height: fit-content;
+        }   
+    }
+        
+    &__text {
+        
+      
+    }
 }
+
+
 
 
 .panel {
@@ -287,17 +312,36 @@ h3 {
 }
 
  /* .img__cover {
-    height: 0;
-    padding-bottom: 100%;
-}  */
-
+    width: 100%;
+    max-width: 500px;
+    position: relative; */
+   
+   
+/*  .img__cover:after{
+     content: "";
+     display: block;
+     padding-bottom: 100%;
+ }  */  
+  
 .box__image {
     width: 100%;
     max-width: 500px;
     height: auto;
     border: 2px solid $primary-color;
     border-radius: 10px;
+    background-color: white;
 }
+
+/* .box__image--placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    background-color: white;
+}  */
+
+
 
 //registrace
 .form {
@@ -343,6 +387,7 @@ h3 {
     }
 }
  
+
 //prehled
 
 .iframe {
@@ -363,7 +408,6 @@ h3 {
     &__heading {
         padding: $padding-table;
         font-size: $bigger-size;
-   
     }
 
     &__text {
