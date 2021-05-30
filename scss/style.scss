@@ -125,11 +125,18 @@ body {
         align-items: center;
         display: block;
     }
+
     &__link:hover{
         @media only screen and (min-width: 1024px){
             border-bottom: 2px solid $background-color;
         }
     }
+
+    &__link--active {
+        @media only screen and (min-width: 1024px){
+            border-bottom: 2px solid $background-color;
+        }
+    } 
 }
 
 .section {

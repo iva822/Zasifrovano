@@ -22,12 +22,12 @@
 			<label class="menu__icon" for="menu-checkbox">&#9776; Menu</label>
 		
 			<ul class="menu__list">
-				<li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
-				<li class="menu__item"><a class="menu__link" href="/ohre/">O hře</a></li>
-				<li class="menu__item"><a class="menu__link" href="/motivacni/">Motivační úlohy</a></li>
-				<li class="menu__item"><a class="menu__link" href="/registrace/">Registrace</a></li>
-				<li class="menu__item"><a class="menu__link" href="/prehled/">Přehled týmů</a></li>
-				<li class="menu__item"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'uvod' }}" href="/">Úvod</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'ohre' }}" href="/ohre/">O hře</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'motivacni' }}" href="/motivacni/">Motivační úlohy</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'registrace' }}" href="/registrace/">Registrace</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'prehled' }}" href="/prehled/">Přehled týmů</a></li>
+				<li class="menu__item"><a class="menu__link {{ 'menu__link--active' if title === 'kontakt' }}" href="/kontakt/">Kontakt</a></li>
 			</ul>
 		</nav>
 	</header>
