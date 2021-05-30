@@ -22,7 +22,6 @@ $normal-size: 16px;
 $bigger-size: 18px;
 
 /* media queries breakpoints
-    @media only screen and (min-width: 480px) {}
     @media only screen and (min-width: 1024px) {} */
 
 body {
@@ -37,7 +36,6 @@ body {
     color: $text-color;
 }
 
-
 .header {
     margin: 0;
     padding: 0;
@@ -47,13 +45,7 @@ body {
         border-radius: 10px 10px 0 0;
     }
     align-items: center;
-    
-    /* &__logo {
-        margin: 0;
-        width: 150px;
-    } */
 }
-
 
 .logo__img {
     padding: $padding-normal;
@@ -61,16 +53,14 @@ body {
     width: 200px;
     @media only screen and (min-width: 1024px) {
         width: 235px;
-    }
-   
+    } 
 }
 
-
 .menu {
-    // vertical-align: middle;
     @media only screen and (min-width: 1024px){
         padding-right: 20px;
     }
+
     &__icon {
         color: $background-color;
         padding: 32px 20px 20px 10px;
@@ -87,9 +77,11 @@ body {
         position: absolute;
         left: -9999px;
     }
+    
     &__checkbox:checked ~ .menu__list {
         display: block;
     }
+    
     &__checkbox:checked ~ .logo__img {
         display: none;
     }
@@ -98,7 +90,6 @@ body {
         padding: 0;
         background-color: $primary-color; 
         display: none;
-
         @media only screen and (min-width: 1024px){
             display: inline-block;
             float: right;
@@ -109,12 +100,10 @@ body {
         padding: $padding-menu;
         list-style: none;
         border-bottom: 1px solid $background-color;
-        
         @media only screen and (min-width: 1024px){
             border-bottom: none;
             display: inline-block;
         }
-
     }
 
     &__link{
@@ -146,7 +135,6 @@ body {
 .hero {
     background-color: $secondary-color;
     min-height: 250px;
-    
     @media only screen and (min-width: 1024px){
         padding-left: 80px;
         padding-right: 80px;
@@ -162,19 +150,15 @@ body {
             height: fit-content;
         }   
     }
-    
 }
-
-
-
 
 .panel {
     text-align: center;
     padding: $padding-normal;
+}
 
-    .text--center {
-       font-size: $bigger-size; 
-    }
+.text--center {
+    font-size: $bigger-size; 
 }
 
 h1 {
@@ -218,11 +202,13 @@ h3 {
         display: flex;
         justify-content: space-between;
     }
+
     .box {
         padding: $padding-normal;
         @media only screen and (min-width: 1024px) {
             flex-basis: 30%;
         }
+
         &__icon {
             padding: $padding-normal;
             width: 60px;
@@ -230,8 +216,6 @@ h3 {
         }
     }
 }
-
-
 
 .button--blue {
     background-color: $secondary-color;
@@ -241,8 +225,7 @@ h3 {
     border-radius: 10px;
     width: 150px;
     margin: auto;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 
 .button__link {
@@ -252,6 +235,8 @@ h3 {
     font-family: $font-main;
     font-weight: 600;
 }
+
+
  // o hre 
 
 .columns{
@@ -269,44 +254,14 @@ h3 {
         grid-row: span 2;
     }
  }   
-    /* .columns__text{
-        margin: 0;
-        @media only screen and (min-width: 1024px){
-            grid-column: 2 / 3;
-            grid-row: span 2;
-        }
-    } 
-    .columns h2 {
-        @media only screen and (min-width: 1024px){
-            grid-column: 2 / 3;
-        }
-    }
-    .columns h3 {
-        @media only screen and (min-width: 1024px){
-            grid-column: 2 / 3;
-        }
-    } */
-
-
+   
 
 .foto {
     width: 100%;
     grid-column: 1 / 2;
     border-radius: 10px;
-    
-    /* &--horni {
-        @media only screen and (min-width: 1024px){
-            grid-row: span 3;
-        }
-    }
-    
-
-    &--spodni {
-        @media only screen and (min-width: 1024px){
-            grid-row: 4 / 9;
-        } 
-    } */
 }
+
 
 //motivacni
 
@@ -314,18 +269,6 @@ h3 {
     font-style: italic;
 }
 
- /* .img__cover {
-    width: 100%;
-    max-width: 500px;
-    position: relative; */
-   
-   
-/*  .img__cover:after{
-     content: "";
-     display: block;
-     padding-bottom: 100%;
- }  */  
-  
 .box__image {
     width: 100%;
     max-width: 500px;
@@ -335,18 +278,9 @@ h3 {
     background-color: white;
 }
 
-/* .box__image--placeholder {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 2px solid $primary-color;
-    border-radius: 10px;
-    background-color: white;
-}  */
-
-
 
 //registrace
+
 .form {
     text-align: center;
     
@@ -418,8 +352,8 @@ h3 {
     }
 }
 
-//kontakt
 
+//kontakt
 
 .form__input--kontakt {
     font-family: $font-main;
@@ -470,7 +404,6 @@ h3 {
     margin-top: 30px;
 }
 
-
 .button__link--simple {
     text-decoration: none;
     color: $secondary-color;
@@ -481,6 +414,8 @@ h3 {
     text-transform: uppercase;
     font-size: $bigger-size;
 }
+
+
 //paticka
 
 .footer{

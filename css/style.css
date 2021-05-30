@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* s padding normal to kolem 1040px dělalo problémy */
 /* media queries breakpoints
-    @media only screen and (min-width: 480px) {}
     @media only screen and (min-width: 1024px) {} */
 body {
   margin: 0;
@@ -21,10 +20,6 @@ body {
   justify-content: space-between;
   background-color: #111d4a;
   align-items: center;
-  /* &__logo {
-      margin: 0;
-      width: 150px;
-  } */
 }
 @media only screen and (min-width: 1024px) {
   .header {
@@ -145,7 +140,8 @@ body {
   text-align: center;
   padding: 20px;
 }
-.panel .text--center {
+
+.text--center {
   font-size: 18px;
 }
 
@@ -250,54 +246,16 @@ h3 {
   }
 }
 
-/* .columns__text{
-    margin: 0;
-    @media only screen and (min-width: 1024px){
-        grid-column: 2 / 3;
-        grid-row: span 2;
-    }
-} 
-.columns h2 {
-    @media only screen and (min-width: 1024px){
-        grid-column: 2 / 3;
-    }
-}
-.columns h3 {
-    @media only screen and (min-width: 1024px){
-        grid-column: 2 / 3;
-    }
-} */
 .foto {
   width: 100%;
   grid-column: 1/2;
   border-radius: 10px;
-  /* &--horni {
-      @media only screen and (min-width: 1024px){
-          grid-row: span 3;
-      }
-  }
-
-
-  &--spodni {
-      @media only screen and (min-width: 1024px){
-          grid-row: 4 / 9;
-      } 
-  } */
 }
 
 .text--italic {
   font-style: italic;
 }
 
-/* .img__cover {
-   width: 100%;
-   max-width: 500px;
-   position: relative; */
-/*  .img__cover:after{
-     content: "";
-     display: block;
-     padding-bottom: 100%;
- }  */
 .box__image {
   width: 100%;
   max-width: 500px;
@@ -307,14 +265,6 @@ h3 {
   background-color: white;
 }
 
-/* .box__image--placeholder {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 2px solid $primary-color;
-    border-radius: 10px;
-    background-color: white;
-}  */
 .form {
   text-align: center;
 }
