@@ -1,0 +1,15 @@
+//paticka
+
+@use 'variables';
+
+.footer{
+    background-color: variables.$primary-color;
+    color: variables.$background-color;
+    padding: variables.$padding-normal;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    @media only screen and (min-width: 1024px){
+        border-radius: 0 0 10px 10px;
+    }
+}

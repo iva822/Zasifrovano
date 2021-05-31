@@ -1,0 +1,95 @@
+//Hlavička
+
+@use 'variables';
+
+.header {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    background-color: variables.$primary-color;
+    @media only screen and (min-width: 1024px){
+        border-radius: 10px 10px 0 0;
+    }
+    align-items: center;
+}
+
+.logo__img {
+    padding: variables.$padding-normal;
+    margin-top: 6px; 
+    width: 200px;
+    @media only screen and (min-width: 1024px) {
+        width: 235px;
+    } 
+}
+
+.menu {
+    @media only screen and (min-width: 1024px){
+        padding-right: 20px;
+    }
+
+    &__icon {
+        color: variables.$background-color;
+        padding: 32px 20px 20px 10px;
+        font-weight: 600;
+        font-size: 20px;
+        float: right;
+        @media only screen and (min-width: 1024px){
+            display: none;
+            font-size: 24px;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    &__checkbox:checked ~ .menu__list {
+        display: block;
+    }
+    
+    &__checkbox:checked ~ .logo__img {
+        display: none;
+    }
+
+    &__list {
+        padding: 0;
+        background-color: variables.$primary-color; 
+        display: none;
+        @media only screen and (min-width: 1024px){
+            display: inline-block;
+            float: right;
+        }
+    }
+
+    &__item {
+        padding: variables.$padding-menu;
+        list-style: none;
+        border-bottom: 1px solid variables.$background-color;
+        @media only screen and (min-width: 1024px){
+            border-bottom: none;
+            display: inline-block;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: variables.$background-color;
+        font-size: variables.$bigger-size;
+        font-weight: 600;
+        align-items: center;
+        display: block;
+    }
+
+    &__link:hover{
+        @media only screen and (min-width: 1024px){
+            border-bottom: 2px solid variables.$background-color;
+        }
+    }
+
+    &__link--active {
+        @media only screen and (min-width: 1024px){
+            border-bottom: 2px solid variables.$background-color;
+        }
+    } 
+}

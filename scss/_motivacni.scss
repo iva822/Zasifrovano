@@ -1,0 +1,16 @@
+//motivacni
+
+@use 'variables';
+
+.text--italic {
+    font-style: italic;
+}
+
+.box__image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid variables.$primary-color;
+    border-radius: 10px;
+    background-color: white;
+}

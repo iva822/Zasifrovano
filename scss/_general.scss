@@ -1,0 +1,124 @@
+// Obecné nastavení pro všechny stránky
+
+@use 'variables';
+
+body {
+    margin: 0;
+    font-family: variables.$font-main;
+    font-size: variables.$normal-size;
+    background-color: variables.$background-color;
+    max-width: 1500px;
+    margin: auto;
+    line-height: 1.8;
+    box-sizing: border-box;
+    color: variables.$text-color;
+}
+
+.section {
+    padding: variables.$padding-normal;
+}
+
+.hero {
+    background-color: variables.$secondary-color;
+    min-height: 250px;
+    @media only screen and (min-width: 1024px){
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        justify-content: space-between;
+    }   
+
+    &__img {
+        display: none;
+        @media only screen and (min-width: 1024px){
+            display: block;
+            width: 200px;
+            height: fit-content;
+        }   
+    }
+}
+
+.panel {
+    text-align: center;
+    padding: variables.$padding-normal;
+}
+
+.text--center {
+    font-size: variables.$bigger-size; 
+}
+
+h1 {
+    font-size: 40px;
+    color: variables.$background-color;
+    @media only screen and (min-width: 1024px){
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 28px;
+    @media only screen and (min-width: 1024px){
+        font-size: 36px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    color: variables.$secondary-color;
+    @media only screen and (min-width: 1024px){
+        font-size: 24px;
+    }
+}
+
+.darkblue {
+    color: variables.$primary-color;
+}
+
+.white {
+    color: variables.$background-color;
+}
+
+.blue {
+    color:variables.$secondary-color;
+}
+
+
+.boxy {
+    text-align: center;
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        padding: variables.$padding-normal;
+        @media only screen and (min-width: 1024px) {
+            flex-basis: 30%;
+        }
+
+        &__icon {
+            padding: variables.$padding-normal;
+            width: 60px;
+            color: variables.$primary-color;
+        }
+    }
+}
+
+.button--blue {
+    background-color: variables.$secondary-color;
+    padding: variables.$padding-normal;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;    
+}
+
+.button__link {
+    text-decoration: none;
+    color: variables.$background-color;
+    font-size: variables.$bigger-size;
+    font-family: variables.$font-main;
+    font-weight: 600;
+}

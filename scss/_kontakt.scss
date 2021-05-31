@@ -1,0 +1,63 @@
+//kontakt
+
+@use 'variables';
+
+.form__input--kontakt {
+    font-family: variables.$font-main;
+    font-size: variables.$normal-size;
+    font-weight: 400;
+    padding: variables.$padding-narrow;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid variables.$primary-color;
+    outline: none;
+}
+
+.form__input--kontakt:focus {
+    border: 3px solid variables.$secondary-color;
+}   
+
+.form__label--kontakt {
+    font-size: variables.$normal-size;
+    font-weight: 600;
+    color: variables.$text-color;
+}
+
+.form__textarea {
+    font-family: variables.$font-main;
+    font-size: variables.$normal-size;
+    font-weight: 400;
+    padding: variables.$padding-narrow;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid variables.$primary-color;
+    outline: none;
+}
+
+.form__textarea:focus { 
+    border: 3px solid variables.$secondary-color;
+}    
+
+.button--simple {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button__link--simple {
+    text-decoration: none;
+    color: variables.$secondary-color;
+    text-align: center;
+    font-weight: 600;
+    padding: variables.$padding-narrow;
+    border-bottom: 2px solid variables.$secondary-color;
+    text-transform: uppercase;
+    font-size: variables.$bigger-size;
+}

@@ -1,0 +1,47 @@
+//registrace
+
+@use 'variables';
+
+.form {
+    text-align: center;
+    
+    &__input {
+        font-family: variables.$font-main;
+        font-size: variables.$normal-size;
+        font-weight: 400;
+        padding: variables.$padding-narrow;
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 2px solid variables.$primary-color;
+        outline:0;    
+    }
+
+    &__input:focus {
+        border: 3px solid variables.$secondary-color; 
+    }
+    
+    &__block {
+        font-size: variables.$bigger-size;
+        font-weight: 600;
+        padding: variables.$padding-normal;
+        border-radius: 10px;
+        border-width: 3px;
+        border-color: variables.$primary-color;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 40px;
+        color: variables.$primary-color;
+    }
+    &__label {
+        font-size: variables.$normal-size;
+        font-weight: 600;
+        color: variables.$text-color;
+    }
+    &_required {
+        font-weight: 600;
+        color: red;
+    }
+}
+ 

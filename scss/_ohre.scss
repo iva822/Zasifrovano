@@ -1,0 +1,26 @@
+// o hre 
+
+@use 'variables';
+
+.columns{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    @media only screen and (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.column {
+    @media only screen and (min-width: 1024px){
+        grid-column: 2 / 3;
+        grid-row: span 2;
+    }
+ }   
+   
+
+.foto {
+    width: 100%;
+    grid-column: 1 / 2;
+    border-radius: 10px;
+}

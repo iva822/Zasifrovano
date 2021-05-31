@@ -2,18 +2,6 @@
 /* s padding normal to kolem 1040px dělalo problémy */
 /* media queries breakpoints
     @media only screen and (min-width: 1024px) {} */
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  background-color: #f4f4f4;
-  max-width: 1500px;
-  margin: auto;
-  line-height: 1.8;
-  box-sizing: border-box;
-  color: #494949;
-}
-
 .header {
   margin: 0;
   padding: 0;
@@ -105,6 +93,32 @@ body {
   .menu__link--active {
     border-bottom: 2px solid #f4f4f4;
   }
+}
+
+.footer {
+  background-color: #111d4a;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  max-width: 1500px;
+  margin: auto;
+  line-height: 1.8;
+  box-sizing: border-box;
+  color: #494949;
 }
 
 .section {
@@ -319,6 +333,7 @@ h3 {
   margin: auto;
   text-align: center;
   border-collapse: collapse;
+  font-family: "Open Sans", sans-serif;
 }
 .table__heading {
   padding: 5px 10px 5px 10px;
@@ -386,18 +401,4 @@ h3 {
   border-bottom: 2px solid #6883ba;
   text-transform: uppercase;
   font-size: 18px;
-}
-
-.footer {
-  background-color: #111d4a;
-  color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-  align-items: center;
-  margin-top: 50px;
-}
-@media only screen and (min-width: 1024px) {
-  .footer {
-    border-radius: 0 0 10px 10px;
-  }
 }/*# sourceMappingURL=style.css.map */
